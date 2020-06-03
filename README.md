@@ -29,7 +29,7 @@ gateway
 ## 四、feign调用改为dubbo调用
 
 ![image-20200604023904671](https://gitee.com/chenyuhua321/spring-cloud-alibaba-test/raw/master/img/image-20200604023904671.png)
-![image-20200604025517362](https://gitee.com/chenyuhua321/spring-cloud-alibaba-test/blob/master/img/image-20200604025517362.png)
+![image-20200604025517362](https://gitee.com/chenyuhua321/spring-cloud-alibaba-test/raw/master/img/image-20200604025517362.png)
 
 ## 五、sentinel对gateway限流
 
