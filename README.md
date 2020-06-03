@@ -1,37 +1,49 @@
-# spring-cloud-alibaba-test
+## 一、服务启动顺序:
 
-#### 介绍
-整合sca组件sentinel nacos dubbo等
+mail-server
 
-#### 软件架构
-软件架构说明
+code-server
 
+user-server
 
-#### 安装教程
+gateway
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+其他nginx配置等于上的作业相同
 
-#### 使用说明
+## 二、配置中心改为nacos设置
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![image-20200604022619402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604022619402.png)
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+![image-20200604021517597](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604021517597.png)
 
 
-#### 码云特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+
+## 三、配置中心改为nacos配置中心
+
+
+
+![image-20200604021539453](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604021539453.png)
+
+## 四、feign调用改为dubbo调用
+
+![image-20200604023904671](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604023904671.png)
+
+## 五、sentinel对gateway限流
+
+![image-20200604024418217](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604024418217.png)
+
+对/api/user/login/854815059@qq.com/123456限流
+
+![image-20200604024601859](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604024601859.png)
+
+qps一秒1次
+
+![image-20200604024650480](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604024650480.png)
+
+![image-20200604025053731](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604025053731.png)
+
+可以看到一秒钟请求了十次，只通过了一次
+
+![image-20200604025204601](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200604025204601.png)

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-test-common" />
+        <module name="code-server" />
+        <module name="dubbo-api" />
+        <module name="gateway" />
+        <module name="mail" />
+        <module name="user-server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="code-server" options="-parameters" />
+      <module name="dubbo-api" options="" />
+      <module name="gateway" options="-parameters" />
+      <module name="mail" options="-parameters" />
+      <module name="user-server" options="-parameters" />
+    </option>
+  </component>
+</project>
